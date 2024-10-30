@@ -1,0 +1,127 @@
+.home{
+        margin-top: 2px;
+        width: 100%;
+        height: 100vh;
+        background-color: #333333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.home-container{
+    /* border: 1px solid #000; */
+    width: 90%;
+    height: 95vh;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.home-profile>img{
+    width: 450px;  
+    border-radius: 20px; 
+    height: 450px;
+    transition: all 0.4s ease-in-out;
+}
+.home-profile>img:hover{
+    transform: scale(1.05);
+}
+.home-detail{
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    gap: 10px;
+}
+.name>h1{
+    font-size: 40px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 4px 2px #000;
+}
+.role>h3{
+    font-size: 30px;
+    color: antiquewhite;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-variant: small-caps;
+    text-shadow: 2px 4px 2px #000;
+}
+.home-detail>p{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    color: #fff;
+    font-weight:600;
+    text-shadow: 2px 4px 2px #000;
+    font-style: oblique;
+    font-variant: small-caps;
+}
+.home-about{
+    display: flex;
+    align-items: center ;
+    gap: 40px;
+    margin-top: 10px;
+}
+.home-link{
+    text-decoration: none;  
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #fff;
+    background-color: tomato;
+    padding: 20px 10px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-weight:bold ;
+    font-style: oblique;
+    font-variant: small-caps;
+    transition: all 0.5s ease-in-out;
+}
+.home-link:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 2px 0px red;
+    background-color: red;
+}
+.home-link-img{
+    background-color: tomato;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+.home-link-img>img{
+    border-radius: 50px;
+}
+.home-link-img:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 2px 0px red;
+    background-color: red;
+}
+@media (max-width:768px) {
+    .home-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-profile>img{
+        width: 350px;
+        height: 250px;
+    }
+    .home-detail{
+        width: 100%;
+    }
+    .name>h1{
+        font-size: 30px;
+    }
+    .role>h3{
+        font-size: 20px;
+
+    }
+}

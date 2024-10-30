@@ -1,0 +1,110 @@
+footer{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #333333;
+    padding: 20px 10px;
+}
+footer>.footer-about{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+}
+.footer-email,.footer-contact{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.footer-email>h1,.footer-contact>h1{
+    font-size: 40px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 2px 4px 2px #000;
+}
+.footer-email>a,.footer-contact>a{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    color: #fff;
+    font-weight:600;
+    text-shadow: 2px 4px 2px #000;
+    font-style: oblique;
+    text-decoration: none;
+    /* font-variant: small-caps; */
+}
+.footer-portfolio{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+.footer-portfolio>div>.links{
+    font-size: 30px;
+    color: antiquewhite;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-variant: small-caps;
+    text-shadow: 2px 4px 2px #000;
+    text-decoration: none;
+}
+.footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row ;
+    gap: 80px;
+}
+.footer-link{
+    text-decoration: none;  
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #fff;
+    background-color: tomato;
+    padding: 20px 10px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-weight:bold ;
+    font-style: oblique;
+    font-variant: small-caps;
+    transition: all 0.5s ease-in-out;
+}
+.footer-link:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 2px 0px red;
+    background-color: red;
+}
+@media (max-width:768px) {
+    .footer-about{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-email>h1{
+        font-size: 26px;
+    }.footer-email>a{
+        font-size: 18px;
+    }
+    .footer-contact>h1{
+        font-size: 26px;
+    }
+    .footer-contact>a{
+        font-size: 18px;
+    }
+    .footer-portfolio{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    hr{
+        display: none;
+    }
+}
